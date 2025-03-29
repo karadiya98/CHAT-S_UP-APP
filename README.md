@@ -6,17 +6,10 @@
 
 
 
- 
+ 2] This is signup and login screen
 <div align = center">
-  <div style="text-align: center;">
-    <p>this is sign_up</p>
     <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/63e0651ce4bde2b6cb561a088ff43943d75c9130/sign.jpg" width="250" style="margin: 10px;">
-  </div>
-  
-  <div style="text-align: center;">
-    <p>this is login</p>
     <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/9bae583c1b3253c1b5a6185cfdeac90d78c4c3db/log.jpg" width="250" style="margin: 10px;">
-  </div>
 </div>
 
 
