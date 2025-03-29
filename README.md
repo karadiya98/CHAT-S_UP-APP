@@ -16,7 +16,9 @@
  3] This is main screen 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 20px;">
     <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/2791cd7e552ac830a522461e66dd11fd02fcd187/main.jpg" width="250" style="margin: 10px;">
-    <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/9bae583c1b3253c1b5a6185cfdeac90d78c4c3db/log.jpg" width="250" style="margin: 10px;">
+    <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/a294377a0a74ee4d8dcdb237c930d30d6f2ba501/profile.jpg" width="250" style="margin: 10px;">
+    <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/a294377a0a74ee4d8dcdb237c930d30d6f2ba501/profile.jpg" width="250" style="margin: 10px;">
+    <img src="https://github.com/karadiya98/CHAT-S_UP-APP/blob/a294377a0a74ee4d8dcdb237c930d30d6f2ba501/profile.jpg" width="250" style="margin: 10px;">
 </div>
 
 
