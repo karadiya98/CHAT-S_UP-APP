@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Add the Toolbar at the top -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="#179788"
+        app:title= "Profile"
+        app:titleTextColor="@color/white"
+        android:elevation="@dimen/_60sdp"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_15sdp"
+>
+
+
+
+    <!-- Logo ImageView -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/dummy_profile"
+        android:layout_gravity="center"
+        app:civ_border_width="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+    <!-- Name -->
+    <!-- Account Settings -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/typed_back"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/profile"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:layout_gravity="start"
+                android:textSize="12sp"
+                android:textColor="#757575"/>
+
+            <TextView
+                android:id="@+id/userNameid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR name"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic"
+                android:textColor="#0F0E0E"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- About Me -->
+    <!-- Account Settings -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:gravity="start"
+        android:paddingVertical="16dp"
+        android:background="@drawable/typed_back"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/profile"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me "
+                android:layout_gravity="start"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello i am joe from bengal "
+                android:textSize="@dimen/_13sdp"
+                android:textColor="#757575"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Account Settings -->
+
+
+    <!-- Edit Button (similar to WhatsApp's "Edit Profile" button) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/typed_back"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/profile" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Phone Number"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/userPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy, security, change number"
+                android:textColor="#757575"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:backgroundTint="#16A896"
+    android:layout_marginTop="@dimen/_60sdp" />
+</LinearLayout>
+</LinearLayout>

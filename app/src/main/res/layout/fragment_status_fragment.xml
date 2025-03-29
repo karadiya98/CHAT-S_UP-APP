@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Profile Section (Profile Image + Name + Current Status) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:background="@drawable/typed_back"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/statusprofileImageid"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/dummy_profile"
+            app:civ_border_color="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            app:civ_border_width="@dimen/_2sdp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"/>
+
+        <!-- Profile Name and Status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="start">
+
+            <TextView
+                android:id="@+id/statususer_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="italic"
+                android:textColor="#000000"/>
+
+            <!-- The status text will be displayed here -->
+            <TextView
+                android:id="@+id/userStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey, I am using the app!"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#757575"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add Blog Button (Create a Blog Post) -->
+    <Button
+        android:id="@+id/createBlogButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Blog Post"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#16A896"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- ScrollView wrapping blog content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section for Shared Blog Posts -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Blog Posts"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/blogListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Example Blog Post -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/white"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="@dimen/_10sdp"
+                    android:layout_gravity="center">
+
+                    <!-- Blog Title -->
+                    <TextView
+                        android:id="@+id/blogTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sample Blog Title"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+
+                    <!-- Blog Content -->
+                    <TextView
+                        android:id="@+id/blogContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:fontFamily="cursive"
+                        android:text="This project is developed by Haider Ali. The main goal of this project is to explore how WhatsApp works in terms of security, how messages are stored for particular receiver UIDs, and how WhatsApp manages the entire messaging process. Through this, I aim to understand the underlying mechanisms that WhatsApp uses to ensure privacy, secure communication, and the seamless management of messages between users."
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="#757575"
+                        android:layout_marginTop="8dp"/>
+
+                    <!-- Timestamp of the Blog Post -->
+                    <TextView
+                        android:id="@+id/blogTimestamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yesterday"
+                        android:textSize="12sp"
+                        android:textColor="#757575"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+
+                <!-- Additional blog posts will be added dynamically here -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
